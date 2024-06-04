@@ -27,6 +27,7 @@ class YesPanelProvider extends PanelProvider
             ->id('yes')
             ->path('yes')
             ->login()
+            ->registration()
             ->colors([
                 'primary' => Color::Amber,
             ])
