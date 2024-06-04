@@ -11,6 +11,11 @@ class Convenio extends Model
      // Atributos que podem ser preenchidos em massa
      protected $fillable = ['nome', 'valor_cota'];
 
+     public function calendarios()
+    {
+        return $this->hasMany(Calendario::class);
+    }
+
          // Mutator para formatar o valor da cota
      public function getValorCotaAttribute($value)
      {

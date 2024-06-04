@@ -16,7 +16,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class SolicitanteResource extends Resource
 {
     protected static ?string $model = Solicitante::class;
-
+    protected static ?string $navigationGroup = 'Cadastros';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string $navigationLabel = 'Solicitantes';
     protected static ?string $pluralLabel = 'Solicitantes';

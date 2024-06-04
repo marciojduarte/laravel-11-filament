@@ -16,11 +16,12 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class AgenteSaudeResource extends Resource
 {
     protected static ?string $model = AgenteSaude::class;
-
+    protected static ?string $navigationGroup = 'Cadastros';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string $navigationLabel = 'Agentes de Saúde';
     protected static ?string $pluralLabel = 'Agentes de Saúde';
     protected static ?string $label = 'Agente de Saúde';
+
 
     public static function form(Form $form): Form
     {

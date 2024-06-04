@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class CalendarioResource extends Resource
 {
     protected static ?string $model = Calendario::class;
+    protected static ?string $navigationGroup = 'Cadastros';
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string $navigationLabel = 'Calendarios';
     protected static ?string $pluralLabel = 'Calendários';
