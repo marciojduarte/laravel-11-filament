@@ -87,7 +87,7 @@ class ConvenioResource extends Resource
             'index' => Pages\ListConvenios::route('/'),
             'create' => Pages\CreateConvenio::route('/create'),
             'edit' => Pages\EditConvenio::route('/{record}/edit'),
-           // 'calendarios' => Pages\ListConvenioCalendarios::route('/{record}/calendarios'), // New custom page
+            
         ];
     }
 }
